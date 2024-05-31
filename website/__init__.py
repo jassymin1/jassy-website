@@ -15,6 +15,7 @@ def create_app():
     # register blueprints with flask application
     # url_prefix is saying: "all of the URLs stored inside the blueprints file
     # how do I access them?"
+    # '/' = means no prefix
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
 
